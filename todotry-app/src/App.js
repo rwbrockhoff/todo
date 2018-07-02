@@ -16,16 +16,22 @@ class App extends Component {
 
   
 
-  appInputUp(savedValue){
-    console.log(savedValue)
-    console.log("heow heow")
+  appInputUp = (savedValue) => {
+    this.setState({
+      input: savedValue
+    })
+    console.log(this.state.input)
   }
+   
+ 
+    
+  
 
   render() {
     return (
       <div className="App">
         <Header />
-        <Input saveOurValue={() => this.appInputUp(savedValue)}/>
+        <Input appInputUp={this.appInputUp}/>
         <h2> {this.props.startInput} </h2>
       </div>
     );
