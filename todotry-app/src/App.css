@@ -1,0 +1,13 @@
+App {
+  background-color: black;
+}
+
+body {
+  background-image: url('./assets/gradientpaper.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
